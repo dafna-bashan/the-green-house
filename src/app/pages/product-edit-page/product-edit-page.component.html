@@ -1,0 +1,17 @@
+<div class="product-edit-screen">
+    <div class="product-edit">
+        <form #form="ngForm" (ngSubmit)="onSaveProduct()" class="flex column">
+            <input type="text" [(ngModel)]="product.name" required minlength="2" #fullName="ngModel" name="name" placeholder="Name">
+            <div class="errors">
+                <div *ngIf="!fullName.valid && fullName.touched">Name is invalid</div>
+            </div>
+            <input type="number" [(ngModel)]="product.price" required min="1" name="price" #price="ngModel" placeholder="Price">
+            <div class="errors">
+                <div class="errors" *ngIf="!price.valid && price.touched">Price is invalid</div>
+            </div>
+            <textarea cols="30" rows="10" [(ngModel)]="product.desc" required name="desc" placeholder="Description"></textarea>
+            <button>Save</button>
+            <div class="back" (click)="onBack()">Go back</div>
+        </form>
+    </div>
+</div>

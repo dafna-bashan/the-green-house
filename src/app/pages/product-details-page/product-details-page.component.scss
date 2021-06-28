@@ -1,0 +1,25 @@
+.product-details {
+    gap  : 15px;
+    width: 500px;
+
+    img {
+        width: 350px;
+    }
+
+    p:first-of-type {
+        font-size  : 23px;
+        font-family: roboto-regular;
+    }
+
+    .desc {
+        font-family: roboto-light;
+    }
+
+    button {
+        padding      : 2px 20px;
+        margin       : 15px 8px;
+        border       : none;
+        border-radius: 20px;
+        color: inherit;
+    }
+}

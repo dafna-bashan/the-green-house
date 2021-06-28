@@ -1,0 +1,11 @@
+<div class="product-details container flex column align-center">
+    <img src={{product.imgUrl}} alt="">
+    <p>{{productToDisplay?.name}} | {{productToDisplay?.price}} $</p>
+    <p class="desc">{{productToDisplay?.desc}}</p>
+    <div class="btns">
+        <button [routerLink]="['/product', product._id, 'edit']">Edit</button>
+        <button (click)="onRemoveProduct(product._id)">Delete</button>
+        <button routerLink="/product">Go back</button>
+    </div>
+    <router-outlet></router-outlet>
+</div>

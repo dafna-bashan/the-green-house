@@ -1,0 +1,13 @@
+.product-preview {
+    border: .3px solid rgb(197, 197, 197);
+    border-radius: 8px;
+    padding: 10px;
+    width: 208px;
+    text-align: center;
+    .img-container{
+        height: 220px;
+    }
+    img {
+        width: 190px;
+    }
+}
