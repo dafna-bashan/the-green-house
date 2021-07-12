@@ -1,13 +1,26 @@
 .product-page {
-    .options{
-        gap: 15px;
-
+    .options {
+        gap           : 15px;
+        flex-direction: column;
+        button {
+            border       : none;
+            padding      : 6px 25px;
+            border-radius: 25px;
+            color        : inherit;
+        }
+        margin-bottom: 20px;
     }
-    button {
-        border: none;
-        padding: 6px 25px;
-        border-radius: 25px;
-        margin-bottom: 30px;
-        color: inherit;
+}
+
+@media (min-width: 460px) {
+    .product-page {
+        .options {
+            gap           : 15px;
+            flex-direction: row;
+            margin-bottom: 0px;
+            button {
+                margin-bottom: 30px;
+            }
+        }
     }
 }

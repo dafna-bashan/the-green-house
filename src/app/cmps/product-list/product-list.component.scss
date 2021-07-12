@@ -1,4 +1,11 @@
-.product-list{
-flex-wrap: wrap;
-gap: 15px;
+.product-list {
+    flex-direction: column;
+    gap           : 15px;
+  
+}
+
+@media (min-width: 460px) {
+    .product-list {
+        flex-wrap: wrap;
+    }
 }

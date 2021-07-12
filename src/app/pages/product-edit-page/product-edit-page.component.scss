@@ -2,14 +2,15 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(65, 65, 65, 0.692);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
         .product-edit{
             padding: 30px;
             position: absolute;
-            top: calc(100vh/ 4.7);
-            left: calc(100vw/ 2.5);
+            top: calc(100vh/ 6);
+            left: calc(100vw/ 2);
+            transform: translateX(-50%);
             background-color: rgb(224, 224, 224);
             border-radius: 10px;
             box-shadow: 0 0 10px #565656;
@@ -43,6 +44,15 @@
             .errors{
                 font-size: 12px;
                 height: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 460px) {
+        .product-edit-screen{
+            .product-edit{
+                top: calc(100vh/ 4.7);
+                left: calc(100vw/ 2.5);
             }
         }
     }

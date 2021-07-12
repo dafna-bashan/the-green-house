@@ -1,4 +1,4 @@
-<div class="product-page container">
+<div class="product-page container flex column align-center">
     <div class="flex options">
         <button [routerLink]="['/product/add']">Add new product</button>
         <product-filter [filterBy]="filterBy" (onFilter)="onSetFilter($event)"></product-filter>

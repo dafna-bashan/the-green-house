@@ -1,18 +1,32 @@
-.green-house-app{
+.green-house-app {
     margin-top: 70px;
     text-align: center;
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-    h2{
-        font-size: 20px;
+
+    h2 {
         background-color: #9cdaaa;
-        display: inline-block;
-        padding: 15px 35px;
-        border-radius: 25px;
+        display         : inline-block;
+        padding         : 15px 35px;
+        border-radius   : 25px;
     }
-    img{
+
+    img {
         display: block;
-        width: 600px;
+        width  : 100%;
+    }
+}
+
+@media (min-width: 460px) {
+    .green-house-app {
+        img {
+            width: 600px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
     }
 }
