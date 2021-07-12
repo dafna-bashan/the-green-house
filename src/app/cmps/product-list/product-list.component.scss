@@ -6,6 +6,7 @@
 
 @media (min-width: 460px) {
     .product-list {
+        flex-direction: row;
         flex-wrap: wrap;
     }
 }
